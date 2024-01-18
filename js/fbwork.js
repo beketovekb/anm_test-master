@@ -1541,6 +1541,7 @@ function loadDirector(lng) {
         }
         // document.getElementById(dv).insertAdjacentHTML('afterbegin','<li><div class="vert_line"></div><a href="service01.html">'+title+'</a></li>' );
         // creatProductCard('vseproduct',key,title,lng);
+        //Hello Maks
         eml = "";
         if(item.email.length>2){eml='<span class="manager_mail">' + item.email + '</span>'}
 
