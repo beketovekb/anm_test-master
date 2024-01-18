@@ -1541,13 +1541,18 @@ function loadDirector(lng) {
         }
         // document.getElementById(dv).insertAdjacentHTML('afterbegin','<li><div class="vert_line"></div><a href="service01.html">'+title+'</a></li>' );
         // creatProductCard('vseproduct',key,title,lng);
+        eml = "";
+        if(item.email.length>2){eml='<span class="manager_mail">' + item.email + '</span>'}
+
+        nmbr = "";
+        if(item.email.length>2){nmbr='<span class="manager_mail">' + item.numberPhone + '</span>'}
+
         document.getElementById('directorCard').insertAdjacentHTML('beforeend',
           '<div class="manager">' +
           '                    <div class="manager_photo" style="background-image: url(' + item.imageUrl + ')"></div>' +
           '                    <span class="manager_name">' + fio + '</span>' +
           '                    <span class="manager_post">' + post + '</span>' +
-          '                    <span class="manager_mail">' + item.email + '</span>' +
-          '                    <span class="manager_phone">' + item.numberPhone + '</span>' +
+          eml+nmbr+
           '                </div>'
         );
       }
